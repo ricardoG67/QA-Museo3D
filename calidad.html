@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>✨Tu Historia 3D✨</title>
+    <meta name="description" content="Museos 3D interactivos para tus recuerdos, fotos y momentos especiales.">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+    <!-- ✅ FAVICONS -->
+    <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="img/favicon/android-chrome-512x512.png">
+
+    <!-- Para PROD -->
+    <!-- <meta property="og:type" content="website">
+    <meta property="og:title" content="Tu Historia en 3D">
+    <meta property="og:description" content="Un museo 3D interactivo con tus fotos y recuerdos.">
+    <meta property="og:image" content="https://museo3d.com/img/preview-museo.jpg">
+    <meta property="og:url" content="https://museo3d.com/museo.html">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nuestra Historia en 3D">
+    <meta name="twitter:description" content="Un museo 3D interactivo con tus fotos y recuerdos.">
+    <meta name="twitter:image" content="https://tudominio.com/img/preview-museo.jpg"> 
+    
+    VER MANIFEST    -->
+
+</head>
+<body>
+    <!-- 🔄 Overlay de carga -->
+    <div id="loader-overlay">
+        <div class="loader-card">
+            <div class="loader-title">Cargando tu museo...</div>
+            <div class="loader-subtitle">Preparando recuerdos en 3D ✨</div>
+            <div class="loader-bar">
+                <div class="loader-bar-fill" id="loader-bar-fill"></div>
+            </div>
+            <div class="loader-percent" id="loader-percent">0%</div>
+        </div>
+    </div>
+
+    <div id="info">
+        <span>❤️ Nuestra historia en 3d ❤️</span>
+        <span class="hint">Haz clic para entrar · WASD para moverte · Ratón para mirar</span>
+    </div>
+
+    <!-- 📱 Overlay para girar el móvil -->
+    <div id="rotate-overlay">
+        <div>
+            <h2>📱 Gira tu teléfono</h2>
+            <p>Usa el museo en modo horizontal. Esta experiencia se disfruta mucho mejor en laptop o computadora 💻</p>
+        </div>
+    </div>
+
+    <!-- 🎮 Joystick de movimiento en móvil -->
+    <div id="joystick">
+        <div id="joystick-inner"></div>
+    </div>
+
+    <div id="gazePopup"></div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdnjs.cloudflare.com/ajax/libs/three.js/0.159.0/three.module.min.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.159.0/examples/jsm/"
+            }
+        }
+    </script>
+
+    <!-- ✅ JS normal, sin url_for -->
+     <!-- <script type="module" src="js/prueba.js"></script> -->
+    <script type="module" src="js/main.js"></script>
+    <!-- <script type="module" src="js/main.min.js"></script> -->
+</body>
+</html>
