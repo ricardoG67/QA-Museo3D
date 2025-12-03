@@ -25,9 +25,9 @@ if (!museumId) {
             <p>Este museo no existe o la URL es inválida.</p>
             <p>
                 Prueba nuestra demo:
-                <a href="https://www.museo3d.com/?id=DEMO"
+                <a href="https://www.museo3d.com/?id=Demo"
                    style="color:#ff8fa3; text-decoration:underline;">
-                   https://www.museo3d.com/?id=DEMO
+                   https://www.museo3d.com/?id=Demo
                 </a>
             </p>
             <p>
