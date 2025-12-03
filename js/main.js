@@ -163,27 +163,39 @@ const outerWallHeight = baseWallHeight * 1.3;
 // ---- TEXTURAS (con loadingManager) ----
 const texLoader = new THREE.TextureLoader(loadingManager);
 
-const marbleColor = texLoader.load("https://ik.imagekit.io/y6ivkwjoq/texturas/paredes/MARBLE-diffuse.jpg?updatedAt=1764565313321");
-const marbleAO = texLoader.load("https://ik.imagekit.io/y6ivkwjoq/texturas/paredes/MARBLE-ao.jpg?updatedAt=1764565310599");
-const marbleNormal = texLoader.load("https://ik.imagekit.io/y6ivkwjoq/texturas/paredes/MARBLE-normal.jpg?updatedAt=1764565310886");
+// const marbleColor = texLoader.load("https://ik.imagekit.io/y6ivkwjoq/texturas/paredes/MARBLE-diffuse.jpg?updatedAt=1764565313321");
+// const marbleAO = texLoader.load("https://ik.imagekit.io/y6ivkwjoq/texturas/paredes/MARBLE-ao.jpg?updatedAt=1764565310599");
+// const marbleNormal = texLoader.load("https://ik.imagekit.io/y6ivkwjoq/texturas/paredes/MARBLE-normal.jpg?updatedAt=1764565310886");
+
+const marbleColor = texLoader.load("img/texturas/paredes/MARBLE-diffuse.jpg");
+const marbleAO = texLoader.load("img/texturas/paredes/MARBLE-ao.jpg");
+const marbleNormal = texLoader.load("img/texturas/paredes/MARBLE-normal.jpg");
 
 [marbleColor, marbleAO, marbleNormal].forEach(tex => {
     tex.wrapS = tex.wrapT = THREE.RepeatWrapping;
     tex.repeat.set(0.8, 0.6);
 });
 
-const slateColor = texLoader.load("https://ik.imagekit.io/y6ivkwjoq/texturas/piso/SLATE-diffuse.jpg?updatedAt=1764565348135");
-const slateAO = texLoader.load("https://ik.imagekit.io/y6ivkwjoq/texturas/piso/SLATE-ao.jpg?updatedAt=1764565345359");
-const slateNormal = texLoader.load("https://ik.imagekit.io/y6ivkwjoq/texturas/piso/SLATE-normal.jpg?updatedAt=1764565346610");
+// const slateColor = texLoader.load("https://ik.imagekit.io/y6ivkwjoq/texturas/piso/SLATE-diffuse.jpg?updatedAt=1764565348135");
+// const slateAO = texLoader.load("https://ik.imagekit.io/y6ivkwjoq/texturas/piso/SLATE-ao.jpg?updatedAt=1764565345359");
+// const slateNormal = texLoader.load("https://ik.imagekit.io/y6ivkwjoq/texturas/piso/SLATE-normal.jpg?updatedAt=1764565346610");
+
+const slateColor = texLoader.load("img/texturas/piso/SLATE-diffuse.jpg");
+const slateAO = texLoader.load("img/texturas/piso/SLATE-ao.jpg");
+const slateNormal = texLoader.load("img/texturas/piso/SLATE-normal.jpg");
 
 [slateColor, slateAO, slateNormal].forEach(tex => {
     tex.wrapS = tex.wrapT = THREE.RepeatWrapping;
     tex.repeat.set(1, 1.5);
 });
 
-const amethystColor = texLoader.load("https://ik.imagekit.io/y6ivkwjoq/texturas/techo/BIANCO%20LASA%20VENATO%20GOLD%20ZEROCARE%20-%20POLISHED%20-%20MARBLE-diffuse.jpg");
-const amethystAO = texLoader.load("https://ik.imagekit.io/y6ivkwjoq/texturas/techo/BIANCO%20LASA%20VENATO%20GOLD%20ZEROCARE%20-%20POLISHED%20-%20MARBLE-ao.jpg");
-const amethystNormal = texLoader.load("https://ik.imagekit.io/y6ivkwjoq/texturas/techo/BIANCO%20LASA%20VENATO%20GOLD%20ZEROCARE%20-%20POLISHED%20-%20MARBLE-normal.jpg");
+// const amethystColor = texLoader.load("https://ik.imagekit.io/y6ivkwjoq/texturas/techo/BIANCO%20LASA%20VENATO%20GOLD%20ZEROCARE%20-%20POLISHED%20-%20MARBLE-diffuse.jpg");
+// const amethystAO = texLoader.load("https://ik.imagekit.io/y6ivkwjoq/texturas/techo/BIANCO%20LASA%20VENATO%20GOLD%20ZEROCARE%20-%20POLISHED%20-%20MARBLE-ao.jpg");
+// const amethystNormal = texLoader.load("https://ik.imagekit.io/y6ivkwjoq/texturas/techo/BIANCO%20LASA%20VENATO%20GOLD%20ZEROCARE%20-%20POLISHED%20-%20MARBLE-normal.jpg");
+
+const amethystColor = texLoader.load("img/texturas/techo/BIANCO%20LASA%20VENATO%20GOLD%20ZEROCARE%20-%20POLISHED%20-%20MARBLE-diffuse.jpg");
+const amethystAO = texLoader.load("img/texturas/techo/BIANCO%20LASA%20VENATO%20GOLD%20ZEROCARE%20-%20POLISHED%20-%20MARBLE-ao.jpg");
+const amethystNormal = texLoader.load("img/texturas/techo/BIANCO%20LASA%20VENATO%20GOLD%20ZEROCARE%20-%20POLISHED%20-%20MARBLE-normal.jpg");
 
 [amethystColor, amethystAO, amethystNormal].forEach(tex => {
     tex.wrapS = tex.wrapT = THREE.RepeatWrapping;
